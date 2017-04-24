@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CSS3动画</title>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="dateTimepicker/bootstrap-datetimepicker.css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/dateType.css">
+<style type="text/css">
+
+</style>
+
+</head>
+<body>
+  <div class="date-select left clearfix">
+      <ul class="dateType clearfix left">
+          <li><a type="day" typeCode="0">日</a></li>
+          <li><a type="week" typeCode="1">周</a></li>
+          <li class="active"><a type="month" typeCode="2">月</a></li>
+          <li><a type="season" typeCode="3">季</a></li>
+          <li><a type="year" typeCode="4">年</a></li>
+      </ul>
+      <div class="datepicker-wrap left">
+          <input class="form-control datepicker date-day hide" date-type="day" type="text">
+          <input class="form-control datepicker date-week hide" date-type="week" type="text" readonly>
+          <input class="form-control datepicker date-month" date-type="month" type="text">
+          <input class="form-control datepicker date-year hide" date-type="year" type="text">
+          <div class="date-season hide">
+              <input class="form-control datepicker left" date-type="year" type="text">
+              <label class="select-box">
+                  <select class="form-control" date-type="season"></select>
+              </label>
+          </div>
+      </div>
+  </div>
+
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="underscore/underscore-min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="dateTimepicker/bootstrap-datetimepicker.js"></script>
+  <script src="js/dateType.js"></script>
+  <script type="text/javascript">
+    var dateType = new DateType;
+  </script>
+</body>
+</html>
